@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/
+xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>document</title>
+<style type="text/css">
+     a {
+text-decoration:none;
+}
+@font-face{
+ font-family: 'FontMan';
+ src: url('Sahel.ttf') format('truetype'),
+ url('Sahel.woff') format('woff'),
+ url('Sahel.woff2') format('woff2');
+}
+@font-face{
+ font-family: 'Font';
+ src: url('Sahelk.ttf') format('truetype'),
+
+}
+body {
+         font-family:FontMan;
+         text-align:right;
+         direction:rtl;
+         background-color: rgb(194, 230, 247);
+     }
+#content p {
+               text-align:justify;
+           font-size: 18px;
+           text-align:left;
+           background-color: rgb(2, 2, 2);
+           font-family: FontMan;
+           color: #ffffff;
+           padding-top: 20px;
+           }
+#content h2 {
+    color: #f8027d;
+}
+#content {
+         width:52%;
+         float:right;
+                 padding-top:0px;
+                 padding-bottom:900px;
+                 padding-right:200px;
+         }
+.arm {
+    color: rgb(0, 0, 0);
+}
+.mybutton{
+ background-color:#07ac01;
+ border:none;
+ border-radius:10px;
+ color:white;
+ padding:10px 25px;
+ text-align:center;
+ font-size:16px;
+ cursor:pointer;
+}
+
+.mybutton:hover{
+ background-color:#f11b1b;
+}
+</style>
+</head>
+<body>
+    <div>
+        <center><img src="https://s2.uupload.ir/files/rubika_li5u.png" style="margin-left:auto; margin-right:auto;" /></center>
+        <center class="arm">بلـکترون تیـم</center>
+        <p>   </p>
+        <a href="https://BeLectron13.github.io" class="mybutton">◄ برگشت</a>
+
+        <center><h1>متـودهای کتابخانه Belrub</h1></center>
+    </div>
+    <div id="content">
+        <h2>- ارسـال پیـام</h2>
+        <p1> ببینید ما در لاین اول کتابخونه رو ایمپورت کردیم و در لاین بعدیش شما باید به جای AUTH-KEY اوث اکانت خودتون رو وارد کنید.<br />سپس در لاین بعدی که متود ارسال پیام هستش جای target-GUID گویید جایی که قراره پیام ارسال بشه رو وارد کنید که میتونه گویید یک کاربر یا کانال یا یک گروه باشه که میتونید بطور دلخواه گویید موردنظرتون رو قرار بدید!<br />و در آخر پیام دلخواهتون رو به جای Hi BeLectron بزارید و کد هارو اجرا کنید تا پیامتون ارسال بشه !</p1>
+        <p><code>from Belrub import Token<br /><br />
+        bot = Token("AUTH-KEY")<br />
+        bot.sendMessage("target-GUID", "Hi BeLectron !")<br /><br /> sendMessage # </code></P>
+
+        <h2>- ارسـال عکس</h2>
+        <p1>خب رفقا دقت کنید که توی این متود جای AUTH-KEY اوث اکانت رو وارد کنید و سپس جلوی متغیر address آدرس عکس موردنظرتون رو وارد کنید و جلوی متغیر caption کپشن موردنظرتون رو وارد کنید و جای target-GUID گویید جایی که میخواید عکس ارسال بشه رو وارد کنید.</p1>
+        <p><code>from Belrub import Token<br /><br />
+        bot = Token("AUTH-KEY")<br /><br />
+        
+        address = "example.jpg" <br />
+        cap = "your-caption" <br />
+
+        bot.sendPhoto("target-GUID", address, caption = cap)<br /><br />
+
+        sendPhoto #</code></p>
+
+        <h2>- ارسـال ویـس</h2>
+        <p1>خسته شودم بقیش واسه بعدا</p1>
+
+        
+    </div>
+</body>
+</html>
